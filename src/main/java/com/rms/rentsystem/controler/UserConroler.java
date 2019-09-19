@@ -20,6 +20,7 @@ public class UserConroler {
 	
 	@PostMapping("save")
 	public ResponseEntity<UserEntity> save(@RequestBody UserEntity user) {
+		System.out.println("jkjkjkjkjkjkjkj");
 		return ResponseEntity.ok(userService.save(user));
 	}
 	
